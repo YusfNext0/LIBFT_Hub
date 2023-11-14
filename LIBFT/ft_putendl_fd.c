@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynachat <ynachat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 15:34:27 by ynachat           #+#    #+#             */
-/*   Updated: 2023/11/09 21:54:41 by ynachat          ###   ########.fr       */
+/*   Created: 2023/11/10 22:17:42 by ynachat           #+#    #+#             */
+/*   Updated: 2023/11/10 22:30:01 by ynachat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_substr(char const *s, unsigned int start, size_t len)
+void    ft_putendl_fd(char *s, int fd)
 {
-    char    *new;
-
-    if (!s)
-        return (NULL);
-    if (start >= ft_strlen(s))
-        return (ft_strdup(""));
-    if (len > ft_strlen(s) - start)
-        len = ft_strlen(s) - start;
-    new = malloc(sizeof(char ) * (len + 1));
-
-    if (!new)
-        return (NULL);
-    ft_strlcpy(new,s + start,len + 1);
-    return (new);
+    ft_putstr_fd(s, fd);
+    write(fd, "\n", 1);
 }
+// int main()
+// {
+//     char s[] = "youssef nachat";
+//     ft_putendl_fd(s,1);
+//     return (0);
+// }

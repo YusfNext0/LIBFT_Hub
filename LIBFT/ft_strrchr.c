@@ -6,7 +6,7 @@
 /*   By: ynachat <ynachat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 22:17:15 by ynachat           #+#    #+#             */
-/*   Updated: 2023/11/06 12:53:08 by ynachat          ###   ########.fr       */
+/*   Updated: 2023/11/13 17:26:19 by ynachat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ char * ft_strrchr(const char *s, int c)
 
 // int	main()
 // {
-// 	char *src = "there is so ";
-// 	const char *d1 = strrchr(src, '\0');
-//  	const char *d2 = ft_strrchr(src, '\0');
+// 	char *src = "thcxooere is sxox i";
+// 	const char *d1 = strrchr(src, 'x');
+//  	const char *d2 = ft_strrchr(src, 'x');
 // 	printf("original : %s \n", d1);
 // 	printf("my function : %s", d2);
 // 	return (0);

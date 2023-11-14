@@ -6,7 +6,7 @@
 /*   By: ynachat <ynachat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:17:02 by ynachat           #+#    #+#             */
-/*   Updated: 2023/11/06 12:52:51 by ynachat          ###   ########.fr       */
+/*   Updated: 2023/11/13 17:15:44 by ynachat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,4 @@ int	main()
 	printf("original : %s \n", d1);
 	printf("my function : %s", d2);
 	return (0);
-}
-*/
+}*/

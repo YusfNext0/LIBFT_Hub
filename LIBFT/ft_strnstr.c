@@ -6,7 +6,7 @@
 /*   By: ynachat <ynachat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 18:03:28 by ynachat           #+#    #+#             */
-/*   Updated: 2023/11/06 23:13:26 by ynachat          ###   ########.fr       */
+/*   Updated: 2023/11/13 15:51:32 by ynachat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@
 
 char *ft_strnstr(const char *str, const char *find, size_t len)
 {
-    size_t i;
-    size_t b;
+    size_t  i;
+    size_t  b;
 
     i = 0;
     if ((!str || !find) && !len)

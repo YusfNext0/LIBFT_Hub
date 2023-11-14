@@ -6,7 +6,7 @@
 /*   By: ynachat <ynachat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 22:36:46 by ynachat           #+#    #+#             */
-/*   Updated: 2023/11/06 23:50:27 by ynachat          ###   ########.fr       */
+/*   Updated: 2023/11/11 02:04:14 by ynachat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t d;
 
 	if ((!dst || !src) && !dstsize)
-		return (0); 
+		return (ft_strlen(src)); 
 	i = 0;
 	j = ft_strlen(dst);
 	d = ft_strlen(src);
@@ -40,4 +40,10 @@ size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}else 
 		return (d + dstsize);
 }
-
+// int	main()
+// {
+// 	char *src = "abc";
+// 	printf("%zu\n", ft_strlcat(NULL, src, 0));
+// 	printf("%zu\n", strlcat(NULL, src, 0));
+	
+// }

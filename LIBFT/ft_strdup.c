@@ -6,7 +6,7 @@
 /*   By: ynachat <ynachat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 07:15:32 by ynachat           #+#    #+#             */
-/*   Updated: 2023/11/07 22:20:59 by ynachat          ###   ########.fr       */
+/*   Updated: 2023/11/09 16:06:16 by ynachat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ char *ft_strdup(const char *s1)
 {
     char    *p;
     int i;
+    
     p = malloc((sizeof(char) * (ft_strlen(s1)  + 1)));
     if (!p)
-         return (0);
+        return (0);
     i = 0;
     while (s1[i])
     {  
